@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sami's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#me">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Home section-->
+        <section class="first" id="home">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="back.mp4" type="video/mp4">
+            </video>
+            <div class="leftSection">
+                Hi , It's me <span class="name">Samiran</span> 
+                <div> and I'm a </div>
+                <div class="color">
+                    <span id="element"></span>
+                </div>
+                <a href="SAMIRAN PATRA RESUME.pdf" download="RESUME" class="link">
+                    <button class="btn1">Download Resume </button>
+                </a>
+                <a href="https://github.com/samiran2002" target="_blank">
+                    <button class="btn2">Visit Github</button>
+                </a>
+            </div>
+        </section>
+
+        <!--About Section-->
+        <section class="second" id="me">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="back.mp4" type="video/mp4">
+            </video>
+            <div class="about">
+                <img src="" alt="" class="sam" id="image">
+            </div>
+            <div class="container">
+                <div class="card1">
+                    <div class="bio" id="text"></div>
+                    <a href="sketches.html" target="_blank">
+                        <button class="btn3">Sketches</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Projects-->
+        <section class="third" id="project">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="back.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <div class="card">
+                    Card 1
+                    <a href="https://samiran2002.github.io/weatherforecast.github.io/" target="_blank">
+                        <img src="weather.jpg" alt="bird" class="avatar"></a>
+                    <div class="details">
+                        <h4>WEATHER WEB APP</h4>
+                        <p>Find out weather of any city</p>
+                        <h6 class="c1">click on the icon</h6>
+                    </div>
+        
+                </div>
+                <div class="card">Card 2
+                    <a href="https://samiran2002.github.io/calculator.github.io/" target="_blank">
+                    <img src="calc.jpg" alt="fox" class="avatar"></a>
+                    <div class="details">
+                        <h4>CALCULATOR</h4>
+                        <p>Perform arithmatic operations between numbers</p>
+                        <h6 class="c2">click on the icon</h6>
+                    </div>
+                </div>
+                <div class="card">Card 3
+                    <a href="https://samiran2002.github.io/clock.github.io/" target="_blank">
+                    <img src="clock.jpg" alt="fish" class="avatar"></a>
+                    <div class="details">
+                        <h4>Clock</h4>
+                        <p>Find out current time</p>
+                        <h6 class="c1">click on the icon</h6>
+                    </div>
+                </div>
+            </div>
+            <p class="more">For more minor projects visit my Github account</p>
+        </section>
+
+        <!--Contact Section-->
+        <section class="fourth" id="contact">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="back.mp4" type="video/mp4">
+            </video>
+            <div class="contact-box">
+                <div class="contact-links">
+                    <h2>CONTACT</h2>
+                    <div class="links">
+                        <div class="link">
+                            <a href="https://www.linkedin.com/in/samiranp134/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384030.png" alt="linkedin"
+                                    class="icon"></a>
+                        </div>
+                        <div class="link">
+                            <a href="https://www.instagram.com/_.h_e_l_i_o_s._/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384089.png" alt="insta"
+                                    class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form>
+                        <div class="form-item">
+                            <input type="text" name="sender" id="name" required>
+                            <label>Name:</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="email" id="mail" required>
+                            <label>Email:</label>
+                        </div>
+                        <div class="form-item">
+                            <textarea class="" name="message" id="message" required></textarea>
+                            <label>Message:</label>
+                        </div>
+                        <button class="submit-btn" type="button" onclick="sendEmail()">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+    
+                let name = document.getElementById("name").value;
+                let mail = document.getElementById("mail").value;
+                let message = document.getElementById("message").value;
+    
+                let body = "Name : " + name + "<br>Email : " + mail + "<br>Message : " + message;
+    
+                Email.send({
+                    SecureToken: "17b31c70-7bd6-457c-b99a-3cb48c92b4ac",
+                    To: 'sampatra2002@gmail.com',
+                    From: 'sampatra2002@gmail.com',
+                    ReplyTo: mail,
+                    Subject: "Message From Contact Form",
+                    Body: body
+                }).then(
+                    message => alert("Mail sent succeccfully")
+                );
+            }
+        </script>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Artist', 'Gregarious Person'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true ,
+        });
+    </script>
+</body>
+
+</html>

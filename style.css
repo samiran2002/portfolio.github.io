@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    min-width: 940px;
+    background-color: rgba(59, 137, 255, 0.13);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.left {
+    font-size: 1.4rem;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    min-width: 940px; 
+    line-height: 50px;
+}
+.background-clip {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(3px);
+}
+@media (min-aspect-ratio:16/9){
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+.leftSection {
+    font-size: 2rem;
+    margin-top: -80px;
+}
+
+.name {
+    color: rgb(59, 137, 255);
+    font-family: 'Comfortaa', cursive;
+}
+
+.color {
+    color: rgb(59, 137, 255);
+    font-family: 'Comfortaa', cursive;
+}
+
+button {
+    margin-top: 30px;
+    padding: 8px 10px;
+    background-color: rgb(76, 86, 230);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    font-size: .7rem;
+}
+
+.btn2 {
+    margin-left: 13px;
+    position: relative;
+}
+
+.link {
+    font-size: 2px;
+}
+
+.second {
+    height: 100vh;
+    min-width: 940px;
+}
+
+.sam {
+    height: 380px;
+    width: 245px;
+    margin: 50px 90px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.bio {
+    margin-top: -450px;
+    margin-left: 300px;
+    margin-right: 10px;
+    width: auto;
+    height: 100px;
+    text-align: justify;
+}
+
+.btn3 {
+    margin-top: 90px;
+    position: relative;
+    left: 500px;
+}
+
+.container {
+    width: 85%;
+    margin: 4rem auto;
+    display: grid;
+}
+
+.card1 {
+    padding: 2rem;
+}
+
+/* CSS for project section */
+
+.third {
+    height: 102vh;
+    margin-top: -90px;
+}
+.content {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 90px auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 740px;
+    height: 300px;
+    padding: 100px;
+    text-align: center;
+}
+.card {
+    border-radius: 7px;
+    padding: 10px;
+    width: 180px;
+    height: 290px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.03);
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card:hover .avatar {
+    transform: scale(1.1);
+    object-position: 50% 65%;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: 0.15s ease-in-out;
+}
+
+.details {
+    margin-top: -4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.details p {
+    font-size: 13px;
+}
+
+.details h6 {
+    font-size: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.c1 {
+    margin-top: 50px;
+}
+
+.c2 {
+    margin-top: 10px;
+}
+.more {
+    text-align: center;
+    margin-top: -140px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+}
+
+/* CSS for Contact section */
+
+.fourth {
+    box-sizing: border-box;
+    min-width: 940px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    width: clamp(100px, 90%, 1000px);
+    margin: 70px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff52;
+}
+
+.contact-links,
+.contact-form-wrapper {
+    width: 50%;
+    height: 100vh;
+    
+}
+
+.contact-links {
+    border-radius: 10px 0 0 10px;
+}
+
+.contact-form-wrapper {
+    background-color: #ffffff77;
+    border-radius: 0 10px 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contact-links,
+    .contact-form-wrapper {
+        width: 100%;
+    }
+
+    .contact-links {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .contact-form-wrapper {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contact-box {
+        width: 99%;
+        margin: 8% 5%;
+    }
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+    font-size: clamp(30px, 6vw, 60px);
+    letter-spacing: 2px;
+    text-align: center;
+    transform: scale(.95, 1);
+    margin-top: 150px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.link {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+    user-select: none;
+    margin-right: 20px;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.icon:active {
+    transform: scale(1.2, 1.2);
+}
+
+.form-item {
+    position: relative;
+}
+
+label,
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    color: #999;
+    font-size: clamp(14px, 1.5vw, 18px);
+    pointer-events: none;
+    user-select: none;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+input,
+textarea {
+    width: 88%;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    padding: 15px 0px 14px 10px;
+    font-size: clamp(15px, 1.5vw, 18px);
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #000000;
+    text-align: justify;
+}
+input:focus+label,
+input:valid+label,
+textarea:focus+label,
+textarea:valid+label {
+    font-size: clamp(13px, 1.3vw, 16px);
+    color: #777;
+    top: -20px;
+    transition: all .225s ease;
+}
+
+.submit-btn {
+    background-color: #fd917e;
+    filter: drop-shadow(2px 2px 3px #0003);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(16px, 1.6vw, 18px);
+    display: block;
+    padding: 12px 20px;
+    margin: 2px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+    margin-top: 50px;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+    transform: scale(1.1, 1.1);
+    filter: sepia(0.5);
+}
+
+@media only screen and (max-width: 800px) {
+    h2 {
+        font-size: clamp(40px, 10vw, 60px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2 {
+        font-size: clamp(30px, 12vw, 60px);
+    }
+
+    .links {
+        padding-top: 30px;
+    }
+}
